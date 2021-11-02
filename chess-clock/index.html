@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pl-PL">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Zegar szachowy">
+<meta name="keywords" content="zegar szachowy, zegar, szachy">
+<meta name="author" content="Adrian Gyros">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title>Zegar Szachowy</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Zegar Szachowy</h1>
+        <h2 id="timer">28.06.2021 | 18:00:00 | &copyGyros</h2>
+    </header>
+    <section>
+        <ul class="flex-container">
+            <li id="one-timer" class="flex-item-timer flex-item-timer-one">15:00</li>
+            <li class="flex-item-options">
+                <ul class="options-list">
+                    <li class="opions-list-button options-list-chose">Czas gry: <input type="range" name="points" min="1" max="60" value="15" id="time-chose"><label for="time-chose" id="time-value">15</label></li>
+                        <li class="opions-list-button options-list-change">Gra <br><span class="info">(SPACE/CLICK)</span></li>
+                        <li class="opions-list-button options-list-pause">Pauza <br><span class="info">(ESC)</span></li>
+                    <li class="opions-list-button options-list-reset">Reset <br><span class="info">(R)</span></li>
+                    
+                </ul>
+            </li>
+            <li id="two-timer" class="flex-item-timer flex-item-timer-two">15:00</li>
+        </ul>
+    </section>
+	<script src="skrypt/main.js" charset="utf-8"></script>
+</body>
+</html>
